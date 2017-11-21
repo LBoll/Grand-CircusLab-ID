@@ -71,7 +71,7 @@ namespace TestEntityFramwork.Controllers
 
             foreach (Customer CustomerRecord in ORM.Customers.ToList())
             {
-                if (CustomerRecord.CustomerID.Contains(customerID))
+                if (CustomerRecord.CustomerID == customerID)
                 {
                     OutputList.Add(CustomerRecord);
                 }
